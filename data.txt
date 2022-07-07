@@ -1,3 +1,4 @@
 It turned out that I had old session state: Open Control Panel from the Start menu Select User Accounts Select 
 “Manage your credentials” 
 in the left hand menu Delete any credentials related to Git or GitHub Once I did this, it started working again.
+hell boy
