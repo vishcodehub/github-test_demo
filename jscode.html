@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script>
+    function getopr(s)
+    {
+      var c=0;
+      var a=parseInt(document.getElementById("n1").value);
+      var b=parseInt(document.getElementById("n2").value);
+      if(s=="+")
+        c= a+b;
+        else if(s=="-")
+        c=a-b;
+        else if(s=="*")
+        c=a*b;
+        else if(s=="/")
+        c=a/b;
+        else if(s=="%")
+        c=a%b;
+      
+      document.getElementById("rs").value=c;
+    }
+    
+  </script>
+</head>
+<body>
+  <form action="">
+    <table>
+      <tr>
+        <td>Enter First Number</td>
+        <td><input type="text" name="n1" id="n1"></td>
+      </tr>
+      <tr>
+        <td>Enter Second Number</td>
+        <td><input type="text" name="n2" id="n2"></td>
+      </tr>
+      <tr>
+        <td>Show Result</td>
+        <td><input type="text" name="rs" id="rs"></td>
+      </tr>
+      <tr colspan="2">
+        <td><button type="button" name="click" onclick="getopr('+')">Addition</button>
+        <button type="button" name="click" onclick="getopr('-')">Subtraction</button></td>
+        <td><button type="button" name="click" onclick="getopr('*')">Multiplication</button>
+        <button type="button" name="click" onclick="getopr('/')">Division</button>
+        <button type="button" name="click" onclick="getopr('%')">Mod</button></td>
+      </tr>    
+    </table>
+  </form>
+  
+</body>
+</html>
